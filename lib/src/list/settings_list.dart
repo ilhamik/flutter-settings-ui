@@ -71,9 +71,7 @@ class SettingsList extends StatelessWidget {
           itemCount: sections.length,
           padding: contentPadding ?? calculateDefaultPadding(platform, context),
           itemBuilder: (BuildContext context, int index) {
-            return ConstrainedBox(
-                      constraints: BoxConstraints(maxWidth: 800),
-                      child: sections[index]);
+            return sections[index];
           },
         ),
       ),
